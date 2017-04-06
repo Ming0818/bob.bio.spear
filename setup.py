@@ -158,6 +158,7 @@ setup(
         'ivec-plda-voxforge-biohash = bob.bio.spear.config.algorithm.ivec_plda_voxforge_biohash:algorithm', # added by Vedrana for BioHashing
         'ivec-voxforge = bob.bio.spear.config.algorithm.ivec_voxforge:algorithm', # added by Vedrana for baseline ivector without plda
         'ivec-voxforge-biohash = bob.bio.spear.config.algorithm.ivec_voxforge_biohash:algorithm', # added by Vedrana for BioHashing
+        'ivec-voxforge-biohash-ST = bob.bio.spear.config.algorithm.ivec_voxforge_biohash_ST:algorithm', # added by Vedrana for BioHashing in Stolen Token scenario
         # I-Vector config used for AVspoof
         'isv-avspoof  = bob.bio.spear.config.algorithm.isv_avspoof:algorithm',  # ISV config used for AVspoof
         # GMM training algorithm as per the paper "A Comparison of Features for Synthetic Speech Detection"
