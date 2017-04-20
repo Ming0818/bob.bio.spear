@@ -155,10 +155,9 @@ setup(
         'ivec-plda-mobio         = bob.bio.spear.config.algorithm.ivec_plda_mobio:algorithm', # IVec PLDA used for MOBIO
         'isv-mobio         = bob.bio.spear.config.algorithm.isv_mobio:algorithm', # ISV used for MOBIO
         'ivec-avspoof  = bob.bio.spear.config.algorithm.ivec_avspoof:algorithm',  # IVec PLDA used for AVspoof
-        'ivec-plda-voxforge-biohash = bob.bio.spear.config.algorithm.ivec_plda_voxforge_biohash:algorithm', # added by Vedrana for BioHashing
-        'ivec-voxforge = bob.bio.spear.config.algorithm.ivec_voxforge:algorithm', # added by Vedrana for baseline ivector without plda
-        'ivec-voxforge-biohash = bob.bio.spear.config.algorithm.ivec_voxforge_biohash:algorithm', # added by Vedrana for BioHashing
-        'ivec-voxforge-biohash-ST = bob.bio.spear.config.algorithm.ivec_voxforge_biohash_ST:algorithm', # added by Vedrana for BioHashing in Stolen Token scenario
+        'ivec-voxforge = bob.bio.spear.config.algorithm.ivec_voxforge:algorithm', # Baseline IVector
+        'ivec-voxforge-biohash = bob.bio.spear.config.algorithm.ivec_voxforge_biohash:algorithm', # BioHashing IVectors in Normal Scenario
+        'ivec-voxforge-biohash-ST = bob.bio.spear.config.algorithm.ivec_voxforge_biohash_ST:algorithm', # BioHashing IVectors in Stolen Token Scenario
         # I-Vector config used for AVspoof
         'isv-avspoof  = bob.bio.spear.config.algorithm.isv_avspoof:algorithm',  # ISV config used for AVspoof
         # GMM training algorithm as per the paper "A Comparison of Features for Synthetic Speech Detection"
