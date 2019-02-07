@@ -34,6 +34,7 @@ requirements:
     - bob.db.base
     - bob.bio.base
     - matplotlib {{ matplotlib }}
+    - scipy
   run:
     - python
     - setuptools
