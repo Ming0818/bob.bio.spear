@@ -6,7 +6,7 @@ from bob.bio.base.preprocessor import Preprocessor
 
 
 class Base (Preprocessor):
-  """Performs color space adaptations and data type corrections for the given image"""
+  """Performs the requested preprocessing on the given audio"""
 
   def __init__(self, **kwargs):
     Preprocessor.__init__(self, **kwargs)
@@ -19,15 +19,15 @@ class Base (Preprocessor):
     """Writes the given *preprocessed* data to a file with the given name.
     """
     f = bob.io.base.HDF5File(data_file, 'w')
-#    f.set("rate", data[0], compression=compression) # sss #
-#    f.set("data", data[1].astype('int16'), compression=compression)
-    f.set("labels", data[2].astype('int8'), compression=compression)
+    f.set("rate", data[0], compression=compression)
+    f.set("data", data[1], compression=compression)
+    f.set("labels", data[2], compression=compression)
 
 
   def read_data(self, data_file):
     f= bob.io.base.HDF5File(data_file)
-#    rate    = f.read("rate") # sss #
-#    data   = f.read("data").astype('float64')
+    rate    = f.read("rate")
+    data   = f.read("data")
     labels = f.read("labels")
-    return labels #rate, data, labels # sss #
+    return rate, data, labels
 
